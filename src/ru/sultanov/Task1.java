@@ -2,14 +2,11 @@ package ru.sultanov;
 
 public class Task1 {
 
-    static void method(){
-        throw new NullPointerException("NullPointerException");
-    }
-
     public static void main(String[] args) {
 
         try {
-            method();
+            MyClass myClass = new MyClass();
+            myClass.myMethod();
             System.out.println("Hello World!");
         }catch(NullPointerException e){
             System.out.println("NullPointerException");

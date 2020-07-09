@@ -6,10 +6,10 @@ public class Task3 {
 
     public static void main(String[] args) {
 
-        try{
+        try {
             System.out.println(helloWorld);
-            throw new ArithmeticException("ArithmeticException");
-        }catch(ArithmeticException e){
+            throw new HelloWorldException("Hello World Exception");
+        } catch (HelloWorldException e) {
             System.out.println(e.getMessage());
         }
     }
